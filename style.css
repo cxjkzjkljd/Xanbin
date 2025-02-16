@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header button {
+    margin: 0 10px;
+    background-color: #444; /* Dark button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #555; /* Slightly lighter hover effect */
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #333; /* Dark button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555; /* Slightly lighter hover effect */
+}
+
+#pasteList {
+    margin-top: 30px;
+}
+
+.paste-item {
+    background-color: #222; /* Dark paste background */
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #444; /* Slightly lighter border */
+    border-radius: 5px;
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    padding-top: 100px;
+}
+
+.modal-content {
+    background-color: #222; /* Dark background for modal */
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border-radius: 5px;
+    color: white; /* White text inside modal */
+}
+
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: white; /* White close button */
+    text-decoration: none;
+    cursor: pointer;
+}
