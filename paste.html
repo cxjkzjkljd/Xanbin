@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paste - Xanbin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="login.html">Log In</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </header>
+    <main>
+        <h1>Paste Name 1</h1>
+        <p>Created by: User1</p>
+        <p>Views: 100</p>
+        <div class="paste-content">
+            <p>This is the content of the paste.</p>
+            <!-- Content will be dynamically added based on what was saved -->
+        </div>
+        
+        <div class="comment-section">
+            <textarea placeholder="Add a comment..."></textarea>
+            <button>Post Comment</button>
+        </div>
+    </main>
+
+    <script>
+        // This would dynamically fetch the paste content and display it
+        const pasteContent = localStorage.getItem('paste1');
+        document.querySelector('.paste-content').innerText = pasteContent;
+    </script>
+</body>
+</html>
