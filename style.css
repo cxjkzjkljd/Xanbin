@@ -1,55 +1,56 @@
+/* General styling */
 body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
-}
-
-header {
-    text-align: right;
-    padding: 20px;
-}
-
-header .navbar a {
-    margin-left: 10px;
-    text-decoration: none;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+  }
+  
+  .navbar .auth-links a {
     color: white;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 50px;
-}
-
-button {
-    display: block;
-    margin: 20px auto;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .home-content {
+    padding: 20px;
+  }
+  
+  .create-btn {
+    display: inline-block;
     padding: 10px 20px;
     background-color: #444;
     color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #666;
-}
-
-.paste-list {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.paste-item {
-    margin: 10px 0;
-}
-
-.paste-item a {
     text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .paste-list {
+    margin-top: 20px;
+  }
+  
+  .paste-item {
+    margin-bottom: 15px;
+  }
+  
+  .paste-item a {
     color: white;
-    font-weight: bold;
-}
-
-.paste-item p {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .paste-item p {
     margin: 5px 0;
-}
+  }  

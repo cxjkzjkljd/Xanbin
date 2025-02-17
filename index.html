@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xanbin</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xanbin</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <a href="login.html">Log In</a>
-            <a href="signup.html">Sign Up</a>
-        </div>
-    </header>
-    <main>
-        <h1>Welcome to Xanbin</h1>
-        <button onclick="window.location.href='createPaste.html'">Create Paste</button>
-        
-        <div class="paste-list">
-            <div class="paste-item">
-                <a href="paste.html?pasteId=1">Paste Name 1</a>
-                <p>Created by: User1</p>
-                <p>Views: 100</p>
-            </div>
-            <!-- More pastes go here -->
-        </div>
-    </main>
+  <div class="navbar">
+    <div class="logo">Xanbin</div>
+    <div class="auth-links">
+      <a href="login.html">Log In</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+  
+  <div class="home-content">
+    <h1>Welcome to Xanbin</h1>
+    <a href="create-paste.html" class="create-btn">Create a Paste</a>
+    
+    <div class="paste-list">
+      <!-- Example of a paste preview -->
+      <div class="paste-item">
+        <a href="view-paste.html" class="paste-title">My First Paste</a>
+        <p>Created by User1 | Views: 100</p>
+      </div>
+      <!-- More paste items would be dynamically added here -->
+    </div>
+  </div>
+
 </body>
 </html>

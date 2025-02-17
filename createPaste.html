@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Paste - Xanbin</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Paste - Xanbin</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <a href="login.html">Log In</a>
-            <a href="signup.html">Sign Up</a>
-        </div>
-    </header>
-    <main>
-        <h1>Create a Paste</h1>
-        <textarea id="paste-content" placeholder="Write your paste here..."></textarea>
-        <button onclick="savePaste()">Save Paste</button>
-    </main>
+  <div class="create-paste-container">
+    <h1>Create a New Paste</h1>
+    <textarea id="paste-content" rows="20" style="width: 100%;"></textarea>
+    <button onclick="savePaste()">Save Paste</button>
+  </div>
 
-    <script>
-        function savePaste() {
-            // Save the paste content to localStorage (or use a backend for saving)
-            const content = document.getElementById('paste-content').value;
-            localStorage.setItem('paste1', content);
-            alert("Paste saved!");
-        }
-    </script>
+  <script>
+    function savePaste() {
+      // Save the content, ideally using a backend service
+      alert("Your paste has been saved!");
+    }
+  </script>
 </body>
 </html>
